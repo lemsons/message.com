@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #242552;
+}
+li,a{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0%;
+    background-color: violet;
+    margin: 10px;
+    width: 8%;
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 30px;
+    border-width: 5px;
+    animation-name: color-animation;
+    transition: all 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    box-shadow: rgb(27, 20, 27) 7px 6px;
+}
+@keyframes color-animation{
+    0%{background-color: #DE73FF;}
+    10%{background-color: #942eb3;}
+    20%{background-color: #5a0f71;}
+    30%{background-color: #130118;}
+    40%{background-color: #16021c;}
+    50%{background-color: #110a13;}
+    60%{background-color: #3c2d40;}
+    70%{background-color: #805a8b;}
+    80%{background-color: #936b9f;}
+    90%{background-color: #b05cca;}
+    100%{background-color: #c966e7;}
+}
+.button a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+ }
+ .button a:after {
+   content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.3s;
+ }
+ .button:hover a{
+    padding-right: 25px;
+  }
+  .button:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+  h1{
+    position: relative;
+    bottom: 90vh;
+    left: 40%;
+    font-size: 60px;
+    color: white;
+    text-shadow: gray 5px 4px;
+  }
+  p{
+    position: relative;
+    bottom: 85vh;
+    left: 10%;
+    font-size: 45px;
+    color: white;
+    font-style: oblique;
+  }
